@@ -591,6 +591,41 @@ footer {
     }
 }
 
+.cart-box {
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 30px;
+    background: #111116;
+    border: 1px solid #292930;
+    border-radius: 16px;
+}
+
+.cart-box h2 {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #292930;
+}
+
+.cart-item button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart-box h3 {
+    margin: 25px 0;
+    color: #ffd400;
+}
+    
 </style>
 
 </head>
@@ -1372,23 +1407,29 @@ Technology Products
 
 <div class="services">
 
-
 <div class="card">
 
 <div class="icon">🃏</div>
 
 <h3>
-Pokémon TCG
+Pokémon Booster Bundle
 </h3>
 
 <p>
-Trading cards, sealed products and
-gaming-related products.
+Sealed Pokémon TCG booster bundle.
 </p>
 
-<a href="#contact" class="card-button">
-Ask About Products →
-</a>
+<strong>
+S$41.90
+</strong>
+
+<br>
+
+<button
+class="button primary"
+onclick="addToCart('Pokémon Booster Bundle', 41.90)">
+Add to Cart
+</button>
 
 </div>
 
@@ -1398,40 +1439,76 @@ Ask About Products →
 <div class="icon">🎮</div>
 
 <h3>
-Gaming Products
+Gaming Controller
 </h3>
 
 <p>
-Gaming accessories and related
-technology products.
+Gaming controller for PC and console.
 </p>
 
-<a href="#contact" class="card-button">
-Ask About Products →
-</a>
+<strong>
+S$59.90
+</strong>
+
+<br>
+
+<button
+class="button primary"
+onclick="addToCart('Gaming Controller', 59.90)">
+Add to Cart
+</button>
 
 </div>
 
 
 <div class="card">
 
-<div class="icon">🖥️</div>
+<div class="icon">🖱️</div>
 
 <h3>
-PC Parts
+Gaming Mouse
 </h3>
 
 <p>
-Components and accessories for
-custom PC builds.
+Gaming mouse for PC gaming.
 </p>
 
-<a href="#contact" class="card-button">
-Request Product →
-</a>
+<strong>
+S$39.90
+</strong>
+
+<br>
+
+<button
+class="button primary"
+onclick="addToCart('Gaming Mouse', 39.90)">
+Add to Cart
+</button>
 
 </div>
 
+</div>
+
+
+<!-- SHOPPING CART -->
+
+<div class="cart-box">
+
+<h2>🛒 Shopping Cart</h2>
+
+<div id="cartItems">
+Your cart is empty.
+</div>
+
+<h3>
+Total: S$<span id="cartTotal">0.00</span>
+</h3>
+
+<button
+class="button primary"
+onclick="checkout()">
+Proceed to Checkout
+</button>
 
 </div>
 
@@ -1944,6 +2021,103 @@ function sendMessage() {
 
 }
 
+/* =========================
+   SHOPPING CART
+========================= */
+
+let cart = [];
+
+function addToCart(name, price) {
+
+    cart.push({
+        name: name,
+        price: price
+    });
+
+    updateCart();
+
+    alert(name + " added to cart!");
+}
+
+
+function removeFromCart(index) {
+
+    cart.splice(index, 1);
+
+    updateCart();
+}
+
+
+function updateCart() {
+
+    const cartItems =
+        document.getElementById("cartItems");
+
+    const cartTotal =
+        document.getElementById("cartTotal");
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML =
+            "Your cart is empty.";
+
+        cartTotal.innerText =
+            "0.00";
+
+        return;
+    }
+
+
+    let total = 0;
+
+    cartItems.innerHTML = "";
+
+
+    cart.forEach(function(item, index) {
+
+        total += item.price;
+
+        const itemDiv =
+            document.createElement("div");
+
+        itemDiv.className =
+            "cart-item";
+
+        itemDiv.innerHTML = `
+            <span>
+                ${item.name}
+                — S$${item.price.toFixed(2)}
+            </span>
+
+            <button onclick="removeFromCart(${index})">
+                Remove
+            </button>
+        `;
+
+        cartItems.appendChild(itemDiv);
+
+    });
+
+
+    cartTotal.innerText =
+        total.toFixed(2);
+}
+
+
+function checkout() {
+
+    if (cart.length === 0) {
+
+        alert("Your cart is empty.");
+
+        return;
+    }
+
+    alert(
+        "Checkout will be connected to secure Stripe Checkout next."
+    );
+}
+    
 </script>
 
 
