@@ -1392,125 +1392,132 @@ on requirements, parts and work required.
 
 
 <!-- =========================
-     PRODUCTS
+     PRODUCTS / ONLINE STORE
 ========================= -->
 
 <section id="products">
 
-<div class="section-label">
-Online Store
-</div>
+    <div class="section-label">
+        Online Store
+    </div>
 
-<h2 class="section-title">
-Technology Products
-</h2>
+    <h2 class="section-title">
+        Technology Products
+    </h2>
 
-<div class="services">
+    <div class="services">
 
-<div class="card">
+        <!-- PRODUCT 1 -->
+        <div class="card">
 
-<div class="icon">🃏</div>
+            <div class="icon">🃏</div>
 
-<h3>
-Pokémon Booster Bundle
-</h3>
+            <h3>
+                Pokémon Booster Bundle
+            </h3>
 
-<p>
-Sealed Pokémon TCG booster bundle.
-</p>
+            <p>
+                Sealed Pokémon TCG booster bundle.
+            </p>
 
-<strong>
-S$41.90
-</strong>
+            <strong>
+                S$41.90
+            </strong>
 
-<br>
+            <br><br>
 
-<button
-class="button primary"
-onclick="addToCart('Pokémon Booster Bundle', 41.90)">
-Add to Cart
-</button>
+            <button
+                class="button primary"
+                onclick="addToCart('Pokémon Booster Bundle', 41.90)">
+                Add to Cart
+            </button>
 
-</div>
-
-
-<div class="card">
-
-<div class="icon">🎮</div>
-
-<h3>
-Gaming Controller
-</h3>
-
-<p>
-Gaming controller for PC and console.
-</p>
-
-<strong>
-S$59.90
-</strong>
-
-<br>
-
-<button
-class="button primary"
-onclick="addToCart('Gaming Controller', 59.90)">
-Add to Cart
-</button>
-
-</div>
+        </div>
 
 
-<div class="card">
+        <!-- PRODUCT 2 -->
+        <div class="card">
 
-<div class="icon">🖱️</div>
+            <div class="icon">🎮</div>
 
-<h3>
-Gaming Mouse
-</h3>
+            <h3>
+                Gaming Controller
+            </h3>
 
-<p>
-Gaming mouse for PC gaming.
-</p>
+            <p>
+                Gaming controller for PC and console.
+            </p>
 
-<strong>
-S$39.90
-</strong>
+            <strong>
+                S$59.90
+            </strong>
 
-<br>
+            <br><br>
 
-<button
-class="button primary"
-onclick="addToCart('Gaming Mouse', 39.90)">
-Add to Cart
-</button>
+            <button
+                class="button primary"
+                onclick="addToCart('Gaming Controller', 59.90)">
+                Add to Cart
+            </button>
 
-</div>
-
-</div>
+        </div>
 
 
-<!-- SHOPPING CART -->
+        <!-- PRODUCT 3 -->
+        <div class="card">
 
-<div class="cart-box">
+            <div class="icon">🖱️</div>
 
-<h2>🛒 Shopping Cart</h2>
+            <h3>
+                Gaming Mouse
+            </h3>
 
-<div id="cartItems">
-Your cart is empty.
-</div>
+            <p>
+                Gaming mouse for PC gaming.
+            </p>
 
-<h3>
-Total: S$<span id="cartTotal">0.00</span>
-</h3>
+            <strong>
+                S$39.90
+            </strong>
 
-<button
-class="button primary"
-onclick="checkout()">
-Proceed to Checkout
-</button>
+            <br><br>
 
-</div>
+            <button
+                class="button primary"
+                onclick="addToCart('Gaming Mouse', 39.90)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         SHOPPING CART
+    ========================= -->
+
+    <div class="cart-box">
+
+        <h2>
+            🛒 Shopping Cart
+        </h2>
+
+        <div id="cartItems">
+            Your cart is empty.
+        </div>
+
+        <h3>
+            Total: S$<span id="cartTotal">0.00</span>
+        </h3>
+
+        <button
+            class="button primary"
+            onclick="checkout()">
+            Proceed to Checkout
+        </button>
+
+    </div>
 
 </section>
 
