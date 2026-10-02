@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
 
-    
-<meta name="description" content="PikaPika Singapore - Custom gaming PCs, PC repair, IT support, gaming setup and technology services.">
+<meta charset="UTF-8">
 
-<meta name="keywords" content="gaming PC Singapore, custom gaming PC Singapore, PC repair Singapore, IT support Singapore, computer repair Singapore, gaming setup Singapore">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="author" content="PikaPika">
+<title>Pikapika Tech Singapore | IT, Custom PCs, CCTV & AI</title>
+
+<meta name="description"
+content="Pikapika Tech provides IT support, PC repair, custom gaming PCs, CCTV, website development and AI solutions in Singapore.">
+
+<meta name="keywords"
+content="PC repair Singapore, IT support Singapore, custom gaming PC Singapore, CCTV Singapore, website development Singapore, AI chatbot Singapore">
+
+<meta name="author" content="Pikapika Tech">
 
 <meta name="robots" content="index, follow">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>PikaPika Singapore | Gaming PCs, PC Repair & IT Services</title>
-    
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>PikaPika | Gaming • Technology • IT</title>
 
 <style>
 
@@ -36,16 +34,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #08080b;
     color: white;
+    line-height: 1.6;
 }
 
-/* NAVIGATION */
+/* =========================
+   HEADER
+========================= */
 
 header {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(8,8,11,0.92);
+    background: rgba(8,8,11,0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #222229;
 }
@@ -61,34 +62,41 @@ nav {
 
 .logo-link {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
-    
+
 .logo {
-    font-size: 28px;
+    font-size: 27px;
     font-weight: 800;
-    letter-spacing: -1px;
 }
 
 .logo span {
     color: #ffd400;
 }
 
-    .logo-tagline {
+.logo-tagline {
     font-size: 8px;
     letter-spacing: 2px;
     color: #777780;
-    margin-top: 2px;
 }
 
-nav a {
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
     color: #ddd;
     text-decoration: none;
-    margin-left: 28px;
+    margin-left: 24px;
     font-size: 14px;
 }
 
-    .menu-button {
+.nav-links a:hover {
+    color: #ffd400;
+}
+
+.menu-button {
     display: none;
     background: none;
     border: none;
@@ -97,16 +105,9 @@ nav a {
     cursor: pointer;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-}
-
-nav a:hover {
-    color: #ffd400;
-}
-
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
     min-height: 100vh;
@@ -114,14 +115,19 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 130px 25px 80px;
+    padding: 140px 25px 80px;
 
     background:
-        radial-gradient(circle at 50% 35%, #393500 0%, #171600 20%, #08080b 60%);
+        radial-gradient(
+            circle at 50% 35%,
+            #393500 0%,
+            #171600 20%,
+            #08080b 60%
+        );
 }
 
 .hero-content {
-    max-width: 850px;
+    max-width: 900px;
 }
 
 .badge {
@@ -136,7 +142,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: clamp(55px, 10vw, 110px);
+    font-size: clamp(50px, 9vw, 100px);
     line-height: 0.95;
     margin-bottom: 25px;
 }
@@ -146,37 +152,35 @@ nav a:hover {
 }
 
 .hero h2 {
-    font-size: clamp(22px, 4vw, 38px);
+    font-size: clamp(22px, 4vw, 36px);
     margin-bottom: 20px;
 }
 
 .hero p {
     color: #aaaab2;
     font-size: 18px;
-    max-width: 650px;
+    max-width: 700px;
     margin: auto auto 35px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
     justify-content: center;
+    gap: 15px;
     flex-wrap: wrap;
 }
-    
+
+/* =========================
+   BUTTONS
+========================= */
+
 .button {
     display: inline-block;
     padding: 14px 28px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .primary {
@@ -198,7 +202,9 @@ nav a:hover {
     color: #ffd400;
 }
 
-/* SECTIONS */
+/* =========================
+   SECTIONS
+========================= */
 
 section {
     max-width: 1200px;
@@ -222,73 +228,17 @@ section {
     margin-bottom: 55px;
 }
 
-    <!-- PC GALLERY -->
-
-<section id="gallery">
-
-<div class="section-label">
-Our Builds
-</div>
-
-<h2 class="section-title">
-Gaming PC Gallery
-</h2>
-
-<div class="gallery">
-
-<div class="gallery-card">
-<img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=80"
-alt="Gaming PC">
-<div>
-<h3>Gaming PC</h3>
-<p>Custom gaming setup</p>
-</div>
-</div>
-
-<div class="gallery-card">
-<img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80"
-alt="Gaming computer">
-<div>
-<h3>Performance Build</h3>
-<p>Performance-focused PC</p>
-</div>
-</div>
-
-<div class="gallery-card">
-<img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=900&q=80"
-alt="Computer setup">
-<div>
-<h3>Gaming Setup</h3>
-<p>Complete gaming environment</p>
-</div>
-</div>
-
-</div>
-
-</section>
-    
-/* SERVICES */
+/* =========================
+   SERVICE CARDS
+========================= */
 
 .services {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .card {
-
-    .card-button {
-    display: inline-block;
-    margin-top: 15px;
-    color: #ffd400;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.card-button:hover {
-    text-decoration: underline;
-}
-    
     background: linear-gradient(145deg, #15151b, #0f0f14);
     border: 1px solid #292930;
     border-radius: 16px;
@@ -297,7 +247,7 @@ alt="Computer setup">
 }
 
 .card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-6px);
     border-color: #ffd400;
 }
 
@@ -316,56 +266,26 @@ alt="Computer setup">
     font-size: 14px;
 }
 
-/* ABOUT */
-
-.about-box {
-    max-width: 850px;
-    margin: auto;
-    text-align: center;
-    background: #111116;
-    border: 1px solid #25252c;
-    padding: 50px;
-    border-radius: 20px;
+.card strong {
+    color: #ffd400;
+    font-size: 18px;
 }
 
-.about-box p {
-    color: #aaaab2;
-    font-size: 17px;
-    line-height: 1.8;
+.card-button {
+    display: inline-block;
+    margin-top: 18px;
+    color: #ffd400;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* CTA */
-
-.cta {
-    text-align: center;
-    background:
-        radial-gradient(circle at center, #302d00, #111116 60%);
-    border: 1px solid #292930;
-    border-radius: 25px;
-    padding: 80px 30px;
+.card-button:hover {
+    text-decoration: underline;
 }
 
-.cta h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-.cta p {
-    color: #aaaab2;
-    margin-bottom: 30px;
-}
-
-/* FOOTER */
-
-footer {
-    border-top: 1px solid #222229;
-    text-align: center;
-    padding: 35px 20px;
-    color: #666670;
-    font-size: 13px;
-}
-
-/* GALLERY */
+/* =========================
+   GALLERY
+========================= */
 
 .gallery {
     display: grid;
@@ -391,16 +311,226 @@ footer {
     padding: 20px;
 }
 
-.gallery-card h3 {
-    margin-bottom: 5px;
-}
-
 .gallery-card p {
     color: #9999a3;
     font-size: 14px;
 }
-    
-/* MOBILE */
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    background: #111116;
+    border: 1px solid #25252c;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.about-box p {
+    color: #aaaab2;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at center,
+            #302d00,
+            #111116 60%
+        );
+
+    border: 1px solid #292930;
+    border-radius: 25px;
+    padding: 70px 30px;
+}
+
+.cta h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #aaaab2;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.form-container {
+    max-width: 650px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #0b0b0f;
+    color: white;
+    font-family: inherit;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+.form-container button {
+    margin-top: 20px;
+    border: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-top: 1px solid #222229;
+    text-align: center;
+    padding: 35px 20px;
+    color: #666670;
+    font-size: 13px;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2000;
+
+    background: #25D366;
+    color: white;
+
+    padding: 15px 20px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.whatsapp-float:hover {
+    background: #20b957;
+    transform: scale(1.05);
+}
+
+/* =========================
+   CHAT BUTTON
+========================= */
+
+.chat-button {
+    position: fixed;
+    right: 20px;
+    bottom: 85px;
+    z-index: 1999;
+
+    background: #ffd400;
+    color: #111;
+
+    padding: 14px 18px;
+    border-radius: 50px;
+
+    border: none;
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+/* =========================
+   CHATBOX
+========================= */
+
+.chatbox {
+    display: none;
+
+    position: fixed;
+    right: 20px;
+    bottom: 145px;
+
+    width: 340px;
+    max-width: calc(100% - 40px);
+
+    background: #111116;
+    border: 1px solid #33333a;
+    border-radius: 15px;
+
+    z-index: 3000;
+
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #ffd400;
+    color: #111;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.chat-message {
+    background: #202027;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #333;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: #0b0b0f;
+    color: white;
+}
+
+.chat-input button {
+    background: #ffd400;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+}
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 900px) {
 
@@ -408,104 +538,101 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .gallery {
+        grid-template-columns: 1fr;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     nav {
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
         flex-direction: column;
-        gap: 12px;
+        width: 100%;
+        background: #0b0b0f;
+        padding: 15px 0;
     }
 
-    nav a {
-        margin: 0 8px;
+    .nav-links.active {
+        display: flex;
     }
 
-    .hero {
-        padding-top: 170px;
+    .nav-links a {
+        margin: 8px 0;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
     }
 
     .hero h1 {
-        font-size: 60px;
+        font-size: 55px;
     }
 
-    .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-}
-    
-    .services {
-        grid-template-columns: 1fr;
+    .section-title {
+        font-size: 34px;
     }
 
     .about-box {
         padding: 30px 20px;
     }
 
-    
-
-    .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: #0b0b0f;
-    padding: 15px 0;
-}
-
-.nav-links.active {
-    display: flex;
-}
-
-.nav-links a {
-    margin: 8px 0;
-}
-
-.menu-button {
-    display: block;
-}
-    
-    .gallery {
-    grid-template-columns: 1fr;
-}
-    
-    .cta h2 {
-        font-size: 32px;
+    .chatbox {
+        right: 10px;
+        bottom: 140px;
     }
-
 }
 
 </style>
+
 </head>
 
 <body>
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
 <nav>
 
 <a href="#home" class="logo-link">
-    <div class="logo">
-        ⚡ <span>Pika</span>Pika
-    </div>
 
-    <div class="logo-tagline">
-        GAMING • TECHNOLOGY • IT
-    </div>
+<div class="logo">
+⚡ <span>Pika</span>Pika Tech
+</div>
+
+<div class="logo-tagline">
+IT • GAMING • CCTV • AI
+</div>
+
 </a>
 
 <div class="nav-links" id="navLinks">
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#pc-builds">PC Builds</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#it-services">IT Support</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#pc-builds">PC Builds</a>
+<a href="#cctv">CCTV</a>
+<a href="#website-ai">Website & AI</a>
+<a href="#pricing">Pricing</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
 </div>
 
 <button class="menu-button" onclick="toggleMenu()">
-    ☰
+☰
 </button>
 
 </nav>
@@ -513,42 +640,53 @@ footer {
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="home">
 
 <div class="hero-content">
 
 <div class="badge">
-🇸🇬 Singapore • Gaming & Technology
+🇸🇬 Singapore • IT & Technology
 </div>
 
-<h1>Gaming. Technology.<br><span>IT Solutions.</span></h1>
+<h1>
+IT. Gaming.<br>
+<span>Technology.</span>
+</h1>
 
 <h2>
-Gaming. Technology. IT.
+IT, Custom PCs, CCTV & AI Solutions
 </h2>
 
 <p>
-PC builds, repairs, upgrades and technology solutions
-for gamers, creators and everyday users.
+Pikapika Tech provides IT support, PC repair,
+custom gaming PCs, CCTV solutions, websites
+and AI technology solutions in Singapore.
 </p>
 
 <div class="hero-buttons">
-    <a href="#contact" class="button primary">
-        Get a Quote
-    </a>
 
-    <a href="#services" class="button secondary">
-        View Services
-    </a>
+<a href="#contact" class="button primary">
+Get a Quote
+</a>
+
+<a href="#services" class="button secondary">
+View Services
+</a>
+
+</div>
 
 </div>
 
 </section>
 
 
-<!-- SERVICES -->
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section id="services">
 
@@ -557,7 +695,7 @@ What We Do
 </div>
 
 <h2 class="section-title">
-Gaming & Technology Services
+Pikapika Tech Services
 </h2>
 
 <div class="services">
@@ -565,35 +703,19 @@ Gaming & Technology Services
 
 <div class="card">
 
-    <div class="icon">🃏</div>
-
-    <h3>
-        Pokémon TCG
-    </h3>
-
-    <p>
-        Pokémon TCG products, sealed collections,
-        trading cards and gaming-related products.
-    </p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🔧</div>
+<div class="icon">💻</div>
 
 <h3>
-PC & IT Services
+IT Support & PC Repair
 </h3>
 
 <p>
-PC troubleshooting, repairs, upgrades, Windows
-setup, software support and technical assistance.
+PC troubleshooting, repair, cleaning,
+upgrades, Windows setup and technical support.
 </p>
 
-    <a href="#it-services" class="card-button">
-    IT Support →
+<a href="#it-services" class="card-button">
+View IT Services →
 </a>
 
 </div>
@@ -601,19 +723,19 @@ setup, software support and technical assistance.
 
 <div class="card">
 
-<div class="icon">🎮</div>
+<div class="icon">🖥️</div>
 
 <h3>
 Custom Gaming PCs
 </h3>
 
 <p>
-Custom gaming PCs built around your games,
-performance needs, budget and upgrade plans.
+Gaming PCs designed around your budget,
+games, performance requirements and upgrade plans.
 </p>
 
 <a href="#pc-builds" class="card-button">
-    View PC Builds →
+View PC Builds →
 </a>
 
 </div>
@@ -621,16 +743,80 @@ performance needs, budget and upgrade plans.
 
 <div class="card">
 
-<div class="icon">🃏</div>
+<div class="icon">📹</div>
 
 <h3>
-Pokémon TCG
+CCTV Solutions
 </h3>
 
 <p>
-Pokémon Trading Card Game products, collections
-and community content.
+CCTV solutions for homes, shops, offices
+and businesses.
 </p>
+
+<a href="#cctv" class="card-button">
+View CCTV →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌐</div>
+
+<h3>
+Website Development
+</h3>
+
+<p>
+Business websites, landing pages and
+e-commerce websites.
+</p>
+
+<a href="#website-ai" class="card-button">
+Website Services →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🤖</div>
+
+<h3>
+AI Solutions
+</h3>
+
+<p>
+Website AI chatbots and business
+automation solutions.
+</p>
+
+<a href="#website-ai" class="card-button">
+AI Services →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🛒</div>
+
+<h3>
+Technology Products
+</h3>
+
+<p>
+Gaming products, PC accessories,
+technology products and online products.
+</p>
+
+<a href="#products" class="card-button">
+View Products →
+</a>
 
 </div>
 
@@ -639,250 +825,10 @@ and community content.
 
 </section>
 
-<!-- SERVICE PRICING -->
 
-<section id="pricing">
-
-<div class="section-label">
-Services
-</div>
-
-<h2 class="section-title">
-PC & IT Service Pricing
-</h2>
-
-<div class="services">
-
-<div class="card">
-
-<div class="icon">🔍</div>
-
-<h3>PC Diagnosis</h3>
-
-<p>
-Find out what's causing your PC problem before
-deciding on a repair.
-</p>
-
-<strong>From S$50</strong>
-
-<a href="#contact" class="card-button">
-    Book Diagnosis →
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">💾</div>
-
-<h3>RAM / SSD Upgrade</h3>
-
-<p>
-Installation and setup of compatible RAM or SSD
-upgrades.
-</p>
-
-<br>
-
-<strong>From S$30</strong>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🧹</div>
-
-<h3>PC Cleaning</h3>
-
-<p>
-Internal dust cleaning and basic PC maintenance
-to help keep your system running properly.
-</p>
-
-<br>
-
-<strong>From S$40</strong>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🪟</div>
-
-<h3>Windows Setup</h3>
-
-<p>
-Windows installation, drivers, updates and
-basic system configuration.
-</p>
-
-<br>
-
-<strong>From S$50</strong>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">📶</div>
-
-<h3>Wi-Fi / Home IT</h3>
-
-<p>
-Help with Wi-Fi, printers, computers and other
-home technology problems.
-</p>
-
-<br>
-
-<strong>From S$50</strong>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🎮</div>
-
-<h3>Gaming PC Troubleshooting</h3>
-
-<p>
-Diagnose crashes, FPS problems, overheating,
-hardware and software issues.
-</p>
-
-<br>
-
-<strong>From S$50</strong>
-
-</div>
-
-</div>
-
-<br><br>
-
-<div style="text-align:center;">
-
-<p style="color:#9999a3;margin-bottom:20px;">
-Prices are starting estimates. Final pricing depends
-on the problem, parts and work required.
-</p>
-
-<a href="#contact" class="button primary">
-Request a Quote
-</a>
-
-</div>
-
-</section>
-    
-<!-- PC BUILDS -->
-
-<section id="pc-builds">
-
-<div class="section-label">
-Gaming PCs
-</div>
-
-<h2 class="section-title">
-Custom PC Builds
-</h2>
-
-<div class="services">
-
-<div class="card">
-
-<div class="icon">🎮</div>
-
-<h3>Entry Gaming PC</h3>
-
-<p>
-For 1080p gaming and everyday use.
-</p>
-
-<br>
-
-<strong>From S$799</strong>
-
-<a href="#contact" class="card-button">
-    Ask About This Build →
-</a>
-    
-</div>
-
-
-<div class="card">
-
-<div class="icon">⚡</div>
-
-<h3>Performance Gaming PC</h3>
-
-<p>
-For higher FPS gaming and competitive titles.
-</p>
-
-<br>
-
-<strong>From S$1,299</strong>
-
-    <a href="#contact" class="card-button">
-    Ask About This Build →
-</a>
-    
-</div>
-
-
-<div class="card">
-
-<div class="icon">🔥</div>
-
-<h3>High-End Gaming PC</h3>
-
-<p>
-For demanding games, high-resolution gaming
-and content creation.
-</p>
-
-<br>
-
-<strong>From S$1,999</strong>
-
-<a href="#contact" class="card-button">
-    Ask About This Build →
-</a>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">🛠️</div>
-
-<h3>Build Your Own</h3>
-
-<p>
-Choose your CPU, GPU, RAM, storage and other
-components around your budget.
-</p>
-
-<br>
-
-<a href="#contact" class="button primary">
-Request Build
-</a>
-
-</div>
-
-</div>
-
-</section>
-    
-<!-- IT SERVICES -->
+<!-- =========================
+     IT SERVICES
+========================= -->
 
 <section id="it-services">
 
@@ -896,65 +842,690 @@ IT Services
 
 <div class="services">
 
-<div class="card">
-<div class="icon">🐌</div>
-<h3>Slow PC</h3>
-<p>
-Diagnose slow performance and identify hardware
-or software problems.
-</p>
-    
-<a href="#contact" class="card-button">
-    Get PC Help →
-</a>
-    
-</div>
 
 <div class="card">
+
+<div class="icon">🔍</div>
+
+<h3>
+PC Diagnosis
+</h3>
+
+<p>
+Find out what's causing your PC problem
+before deciding on a repair.
+</p>
+
+<strong>
+From S$50
+</strong>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🧹</div>
+
+<h3>
+PC Cleaning
+</h3>
+
+<p>
+Internal dust cleaning and basic
+PC maintenance.
+</p>
+
+<strong>
+From S$40
+</strong>
+
+</div>
+
+
+<div class="card">
+
 <div class="icon">💾</div>
-<h3>PC Upgrades</h3>
+
+<h3>
+RAM / SSD Upgrade
+</h3>
+
 <p>
-RAM, SSD, storage and other hardware upgrades
-to improve performance.
+Installation and setup of compatible
+RAM and SSD upgrades.
 </p>
 
-    <a href="#contact" class="card-button">
-    Upgrade My PC →
-</a>
-    
+<strong>
+From S$30
+</strong>
+
 </div>
 
+
 <div class="card">
-<div class="icon">🛠️</div>
-<h3>PC Repair</h3>
+
+<div class="icon">🪟</div>
+
+<h3>
+Windows Setup
+</h3>
+
 <p>
-Troubleshooting for computers that won't start,
-crash or experience hardware problems.
+Windows installation, drivers,
+updates and system configuration.
 </p>
-    <a href="#contact" class="card-button">
-    Get Repair Help →
-</a>
-    
+
+<strong>
+From S$50
+</strong>
+
 </div>
 
+
 <div class="card">
+
 <div class="icon">📶</div>
-<h3>Home IT Setup</h3>
+
+<h3>
+Wi-Fi / Home IT
+</h3>
+
 <p>
-Wi-Fi, printer, computer and home technology
-setup and troubleshooting.
+Help with Wi-Fi, printers, computers
+and home technology.
 </p>
-    <a href="#contact" class="card-button">
-    Get Home IT Help →
-</a>
-    
+
+<strong>
+From S$50
+</strong>
+
 </div>
+
+
+<div class="card">
+
+<div class="icon">🎮</div>
+
+<h3>
+Gaming PC Troubleshooting
+</h3>
+
+<p>
+Diagnose crashes, overheating,
+FPS problems and hardware issues.
+</p>
+
+<strong>
+From S$50
+</strong>
+
+</div>
+
 
 </div>
 
 </section>
-    
-<!-- ABOUT -->
+
+
+<!-- =========================
+     PC BUILDS
+========================= -->
+
+<section id="pc-builds">
+
+<div class="section-label">
+Gaming PCs
+</div>
+
+<h2 class="section-title">
+Custom Gaming PCs
+</h2>
+
+<div class="services">
+
+
+<div class="card">
+
+<div class="icon">🎮</div>
+
+<h3>
+Entry Gaming PC
+</h3>
+
+<p>
+For 1080p gaming and everyday use.
+</p>
+
+<strong>
+From S$799
+</strong>
+
+<br>
+
+<a href="#contact" class="card-button">
+Ask About This Build →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⚡</div>
+
+<h3>
+Performance Gaming PC
+</h3>
+
+<p>
+For higher FPS gaming and
+competitive titles.
+</p>
+
+<strong>
+From S$1,299
+</strong>
+
+<br>
+
+<a href="#contact" class="card-button">
+Ask About This Build →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔥</div>
+
+<h3>
+High-End Gaming PC
+</h3>
+
+<p>
+For demanding games, high-resolution
+gaming and content creation.
+</p>
+
+<strong>
+From S$1,999
+</strong>
+
+<br>
+
+<a href="#contact" class="card-button">
+Ask About This Build →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CCTV
+========================= -->
+
+<section id="cctv">
+
+<div class="section-label">
+Security Technology
+</div>
+
+<h2 class="section-title">
+CCTV Solutions
+</h2>
+
+<div class="services">
+
+
+<div class="card">
+
+<div class="icon">📹</div>
+
+<h3>
+Home CCTV
+</h3>
+
+<p>
+CCTV solutions for homes and residential
+properties.
+</p>
+
+<a href="#contact" class="card-button">
+Request CCTV Quote →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏪</div>
+
+<h3>
+Business CCTV
+</h3>
+
+<p>
+Camera systems for shops, offices,
+restaurants and businesses.
+</p>
+
+<a href="#contact" class="card-button">
+Request CCTV Quote →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌐</div>
+
+<h3>
+Remote Viewing
+</h3>
+
+<p>
+View compatible CCTV systems remotely
+using your phone.
+</p>
+
+<a href="#contact" class="card-button">
+Ask About CCTV →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     WEBSITE & AI
+========================= -->
+
+<section id="website-ai">
+
+<div class="section-label">
+Digital Technology
+</div>
+
+<h2 class="section-title">
+Website & AI Solutions
+</h2>
+
+<div class="services">
+
+
+<div class="card">
+
+<div class="icon">🌐</div>
+
+<h3>
+Business Website
+</h3>
+
+<p>
+Professional websites for Singapore
+businesses.
+</p>
+
+<strong>
+From S$300
+</strong>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🛒</div>
+
+<h3>
+E-Commerce Website
+</h3>
+
+<p>
+Online stores with products,
+shopping cart and secure checkout.
+</p>
+
+<strong>
+Request Quote
+</strong>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🤖</div>
+
+<h3>
+AI Website Chatbot
+</h3>
+
+<p>
+AI-powered customer support for
+your website.
+</p>
+
+<strong>
+Request Quote
+</strong>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⚙️</div>
+
+<h3>
+Business Automation
+</h3>
+
+<p>
+Automate repetitive business tasks
+using technology and AI.
+</p>
+
+<strong>
+Request Quote
+</strong>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PRICING
+========================= -->
+
+<section id="pricing">
+
+<div class="section-label">
+Starting Prices
+</div>
+
+<h2 class="section-title">
+Pikapika Tech Pricing
+</h2>
+
+<div class="services">
+
+
+<div class="card">
+
+<h3>
+PC Diagnosis
+</h3>
+
+<p>
+PC troubleshooting and diagnosis.
+</p>
+
+<br>
+
+<strong>
+S$50+
+</strong>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+PC Cleaning
+</h3>
+
+<p>
+Basic internal PC cleaning.
+</p>
+
+<br>
+
+<strong>
+S$40+
+</strong>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+RAM / SSD Installation
+</h3>
+
+<p>
+Installation labour excluding parts.
+</p>
+
+<br>
+
+<strong>
+S$30+
+</strong>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+Gaming PC Build
+</h3>
+
+<p>
+Custom assembly and setup.
+</p>
+
+<br>
+
+<strong>
+S$100+
+</strong>
+
+</div>
+
+
+</div>
+
+<br><br>
+
+<p style="text-align:center;color:#9999a3;">
+Prices are starting estimates. Final pricing depends
+on requirements, parts and work required.
+</p>
+
+</section>
+
+
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section id="products">
+
+<div class="section-label">
+Online Store
+</div>
+
+<h2 class="section-title">
+Technology Products
+</h2>
+
+<div class="services">
+
+
+<div class="card">
+
+<div class="icon">🃏</div>
+
+<h3>
+Pokémon TCG
+</h3>
+
+<p>
+Trading cards, sealed products and
+gaming-related products.
+</p>
+
+<a href="#contact" class="card-button">
+Ask About Products →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎮</div>
+
+<h3>
+Gaming Products
+</h3>
+
+<p>
+Gaming accessories and related
+technology products.
+</p>
+
+<a href="#contact" class="card-button">
+Ask About Products →
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🖥️</div>
+
+<h3>
+PC Parts
+</h3>
+
+<p>
+Components and accessories for
+custom PC builds.
+</p>
+
+<a href="#contact" class="card-button">
+Request Product →
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section id="gallery">
+
+<div class="section-label">
+Our Builds
+</div>
+
+<h2 class="section-title">
+Gaming PC Gallery
+</h2>
+
+<div class="gallery">
+
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=900&q=80"
+alt="Gaming PC">
+
+<div>
+
+<h3>
+Gaming PC
+</h3>
+
+<p>
+Custom gaming setup
+</p>
+
+</div>
+
+</div>
+
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80"
+alt="Gaming computer">
+
+<div>
+
+<h3>
+Performance Build
+</h3>
+
+<p>
+Performance-focused PC
+</p>
+
+</div>
+
+</div>
+
+
+<div class="gallery-card">
+
+<img
+src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=900&q=80"
+alt="Computer setup">
+
+<div>
+
+<h3>
+Gaming Setup
+</h3>
+
+<p>
+Complete gaming environment
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section id="about">
 
@@ -965,17 +1536,21 @@ About Us
 <div class="about-box">
 
 <h2 class="section-title">
-Built Around Gaming & Technology
+Pikapika Tech
 </h2>
 
 <p>
-PikaPika is a Singapore-based gaming and technology
-brand focused on PC builds, IT services, gaming and
-digital technology.
+Pikapika Tech is a Singapore-based technology
+business providing IT support, custom gaming PCs,
+CCTV solutions, websites and AI technology services.
+</p>
 
+<br>
+
+<p>
 Our goal is to make technology easier to understand,
-more accessible and more useful for everyday users
-and gamers.
+more accessible and more useful for homes,
+businesses and gamers.
 </p>
 
 </div>
@@ -983,7 +1558,9 @@ and gamers.
 </section>
 
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT
+========================= -->
 
 <section id="contact">
 
@@ -1001,44 +1578,97 @@ Request a Quote
 Tell us what you need and we'll get back to you.
 </p>
 
-<form action="https://formspree.io/f/xgavdlll" method="POST"
-style="max-width:650px;margin:30px auto 0;text-align:left;">
 
-<label>Name</label>
-<input type="text" name="name" required
-style="width:100%;padding:14px;margin:8px 0 18px;border-radius:8px;border:1px solid #333;background:#0b0b0f;color:white;">
+<form
+action="https://formspree.io/f/xgavdlll"
+method="POST"
+class="form-container"
+>
 
-<label>Email</label>
-<input type="email" name="email" required
-style="width:100%;padding:14px;margin:8px 0 18px;border-radius:8px;border:1px solid #333;background:#0b0b0f;color:white;">
 
-<label>Phone / WhatsApp</label>
-<input type="text" name="phone"
-style="width:100%;padding:14px;margin:8px 0 18px;border-radius:8px;border:1px solid #333;background:#0b0b0f;color:white;">
+<label>
+Name
+</label>
 
-<label>Service</label>
-<select name="service"
-style="width:100%;padding:14px;margin:8px 0 18px;border-radius:8px;border:1px solid #333;background:#0b0b0f;color:white;">
+<input
+type="text"
+name="name"
+placeholder="Your name"
+required
+>
+
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+name="email"
+placeholder="Your email"
+required
+>
+
+
+<label>
+Phone / WhatsApp
+</label>
+
+<input
+type="text"
+name="phone"
+placeholder="Your phone number"
+>
+
+
+<label>
+Service
+</label>
+
+<select name="service">
+
+<option>PC Repair</option>
+
+<option>PC Upgrade</option>
 
 <option>Custom Gaming PC</option>
-<option>PC Repair</option>
-<option>PC Upgrade</option>
+
 <option>IT Support</option>
-<option>Home IT Setup</option>
-<option>Gaming / TCG</option>
+
+<option>CCTV</option>
+
+<option>Website Development</option>
+
+<option>AI Solutions</option>
+
+<option>E-Commerce</option>
+
+<option>Products</option>
+
 <option>Other</option>
 
 </select>
 
-<label>Tell us what you need</label>
-<textarea name="message" rows="6" required
-style="width:100%;padding:14px;margin:8px 0 25px;border-radius:8px;border:1px solid #333;background:#0b0b0f;color:white;">
-</textarea>
 
-<button type="submit" class="button primary"
-style="border:none;cursor:pointer;">
+<label>
+Tell us what you need
+</label>
+
+<textarea
+name="message"
+rows="6"
+placeholder="Describe your requirements..."
+required
+></textarea>
+
+
+<button
+type="submit"
+class="button primary"
+>
 Send Request
 </button>
+
 
 </form>
 
@@ -1047,37 +1677,275 @@ Send Request
 </section>
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
-    <div class="logo">
-        ⚡ Pika<span>Pika</span>
-    </div>
+<div class="logo">
+⚡ Pika<span>Pika Tech</span>
+</div>
 
-    <p>
-        Gaming • Technology • IT
-    </p>
+<p>
+IT • GAMING • CCTV • AI
+</p>
 
-    <p>
-        🇸🇬 Singapore
-    </p>
+<p>
+🇸🇬 Singapore
+</p>
 
-    <p>
-        © 2026 PikaPika. All rights reserved.
-    </p>
+<p>
+© 2026 Pikapika Tech. All rights reserved.
+</p>
 
 </footer>
 
+
+<!-- =========================
+     WHATSAPP BUTTON
+========================= -->
+
+<a
+class="whatsapp-float"
+href="https://wa.me/65YOURNUMBER"
+target="_blank"
+>
+💬 WhatsApp
+</a>
+
+
+<!-- =========================
+     CHAT BUTTON
+========================= -->
+
+<button
+class="chat-button"
+onclick="toggleChat()"
+>
+🤖 AI Chat
+</button>
+
+
+<!-- =========================
+     CHATBOX
+========================= -->
+
+<div
+class="chatbox"
+id="chatbox"
+>
+
+<div class="chat-header">
+🤖 Pikapika Tech Assistant
+</div>
+
+
+<div
+class="chat-messages"
+id="chatMessages"
+>
+
+<div class="chat-message">
+Hi! 👋 Welcome to Pikapika Tech.<br><br>
+I can help with PC repair, custom PCs,
+CCTV, websites and AI services.
+</div>
+
+</div>
+
+
+<div class="chat-input">
+
+<input
+id="chatInput"
+type="text"
+placeholder="Ask a question..."
+onkeydown="if(event.key==='Enter') sendMessage()"
+>
+
+<button onclick="sendMessage()">
+Send
+</button>
+
+</div>
+
+</div>
+
+
 <script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
 function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
+
+    document
+        .getElementById("navLinks")
+        .classList.toggle("active");
+
 }
 
-document.querySelectorAll("#navLinks a").forEach(link => {
-    link.addEventListener("click", () => {
-        document.getElementById("navLinks").classList.remove("active");
-    });
-});
+
+/* =========================
+   CHATBOX
+========================= */
+
+function toggleChat() {
+
+    const chat =
+        document.getElementById("chatbox");
+
+    if (chat.style.display === "block") {
+
+        chat.style.display = "none";
+
+    } else {
+
+        chat.style.display = "block";
+
+    }
+
+}
+
+
+/* =========================
+   SIMPLE CHATBOT
+========================= */
+
+function sendMessage() {
+
+    const input =
+        document.getElementById("chatInput");
+
+    const messages =
+        document.getElementById("chatMessages");
+
+    const text =
+        input.value.trim();
+
+    if (!text) {
+        return;
+    }
+
+
+    const customerMessage =
+        document.createElement("div");
+
+    customerMessage.className =
+        "chat-message";
+
+    customerMessage.innerText =
+        text;
+
+    messages.appendChild(
+        customerMessage
+    );
+
+
+    let reply =
+        "Thanks for contacting Pikapika Tech! Please use the WhatsApp button or contact form for a quotation.";
+
+
+    const question =
+        text.toLowerCase();
+
+
+    if (
+        question.includes("pc repair") ||
+        question.includes("repair")
+    ) {
+
+        reply =
+        "Our PC diagnosis starts from S$50. Tell us what is wrong with your PC and we can help you request a quotation.";
+
+    }
+
+
+    else if (
+        question.includes("clean") ||
+        question.includes("cleaning")
+    ) {
+
+        reply =
+        "Our basic PC cleaning starts from S$40. Final pricing depends on the condition and work required.";
+
+    }
+
+
+    else if (
+        question.includes("gaming pc") ||
+        question.includes("gaming computer")
+    ) {
+
+        reply =
+        "Custom gaming PCs start from S$799. We can build a PC around your budget and games.";
+
+    }
+
+
+    else if (
+        question.includes("cctv")
+    ) {
+
+        reply =
+        "We provide CCTV solutions for homes and businesses. Contact us with your location and number of cameras required for a quotation.";
+
+    }
+
+
+    else if (
+        question.includes("website")
+    ) {
+
+        reply =
+        "We build business websites and e-commerce websites. Contact us with your requirements for a quotation.";
+
+    }
+
+
+    else if (
+        question.includes("ai") ||
+        question.includes("chatbot")
+    ) {
+
+        reply =
+        "We provide AI website chatbot and business automation solutions.";
+
+    }
+
+
+    setTimeout(function() {
+
+        const botMessage =
+            document.createElement("div");
+
+        botMessage.className =
+            "chat-message";
+
+        botMessage.innerText =
+            reply;
+
+        messages.appendChild(
+            botMessage
+        );
+
+        messages.scrollTop =
+            messages.scrollHeight;
+
+    }, 400);
+
+
+    input.value = "";
+
+    messages.scrollTop =
+        messages.scrollHeight;
+
+}
+
 </script>
-    
+
+
 </body>
 </html>
